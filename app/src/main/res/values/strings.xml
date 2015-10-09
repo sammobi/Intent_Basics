@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Intent_Basics</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="open_browser">Open Browser</string>
+    <string name="send_mail">Send Mail</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="title_activity_send__mail">Send_Mail</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_send__sms">Send_SMS</string>
+    <string name="title_activity_open__browser">Open_Browser</string>
+    <string name="title_activity_web__view">Web_View</string>
+</resources>

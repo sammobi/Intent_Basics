@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/Open_browserBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_browser"/>
+    <Button
+        android:id="@+id/Send_MailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_mail"/>
+    <Button
+        android:id="@+id/Send_SMSBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_sms"/>
+
+    <Button
+        android:id="@+id/CallBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial a number"/>
+
+
+</LinearLayout>
