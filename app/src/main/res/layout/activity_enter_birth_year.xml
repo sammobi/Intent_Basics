@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.simpalm.intent_basics.EnterBirthYearActivity">
+
+    <EditText
+        android:id="@+id/etMyYearofBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter your year of Birth"
+        android:inputType="number"
+
+        android:maxLength="4"/>
+
+    <Button
+        android:id="@+id/btnMyAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate My Age" />
+
+</LinearLayout>

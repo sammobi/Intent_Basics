@@ -21,15 +21,14 @@ public class SendSMSActivity extends Activity {
     Button sendTextBtn;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send__sms);
 
-        recipientET = (EditText)findViewById(R.id.recipient_Et);
-        enterMessageEt = (EditText)findViewById(R.id.enter_messageEt);
-        sendTextBtn = (Button)findViewById(R.id.send_TextBtn);
+        recipientET = (EditText) findViewById(R.id.recipient_Et);
+        enterMessageEt = (EditText) findViewById(R.id.enter_messageEt);
+        sendTextBtn = (Button) findViewById(R.id.send_TextBtn);
 
 
         sendTextBtn.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +38,6 @@ public class SendSMSActivity extends Activity {
                 validMessage();
             }
         });
-
 
 
     }
@@ -62,15 +60,15 @@ public class SendSMSActivity extends Activity {
             return;
         }
 
-      //  String TO[] = {to};
+        //  String TO[] = {to};
 
 
-        sendTextMessage(recipient, message );
+        sendTextMessage(recipient, message);
 
 
     }
 
-    private void ShowAlertDialog(String message){
+    private void ShowAlertDialog(String message) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(message)
@@ -85,16 +83,14 @@ public class SendSMSActivity extends Activity {
 
     }
 
-    public void sendTextMessage (String to, String message)
-    {
+    public void sendTextMessage(String to, String message) {
         to = to.replaceAll("#", ";");
 
         Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.putExtra("sms_body",message);
+        sendIntent.putExtra("sms_body", message);
         sendIntent.putExtra("address", new String(to));
         sendIntent.setType("vnd.android-dir/mms-sms");
         startActivity(sendIntent);
-
 
 
     }

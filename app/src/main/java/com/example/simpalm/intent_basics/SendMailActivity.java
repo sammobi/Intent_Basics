@@ -84,9 +84,9 @@ public class SendMailActivity extends Activity {
 
             return;
         }
-        String TO[]={to};
-        String CC[]={cc};
-        String BCC[]={bcc};
+        String TO[] = {to};
+        String CC[] = {cc};
+        String BCC[] = {bcc};
 
         SendMail(TO, CC, BCC, subject, message);
 

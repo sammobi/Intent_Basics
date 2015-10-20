@@ -12,4 +12,7 @@
     <string name="title_activity_send__sms">Send_SMS</string>
     <string name="title_activity_open__browser">Open_Browser</string>
     <string name="title_activity_web__view">Web_View</string>
+    <string name="title_activity_find_my_age">FindMyAgeActivity</string>
+    <string name="title_activity_enter_birth_year">EnterBirthYearActivity</string>
+    <string name="title_activity_option_menu">OptionMenuActivity</string>
 </resources>
